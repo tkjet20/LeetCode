@@ -1,5 +1,6 @@
 class Solution {
     public boolean isAnagram(String s, String t) {
+        
         //if string lengths are not equal, they return false
         // add s to hashmap
         // iterate through t and decrease the count for each character. If the character count is ever 0 before          /       // decrementing or the key doesn't exist, return false
@@ -30,7 +31,6 @@ class Solution {
             hashmap.put(c, --countVal);
         }
 
-        return true;
-        
+        return true;        
     }
 }
